@@ -11,6 +11,7 @@
      table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
      }
      td, th{
         border: 1px solid black;
@@ -19,6 +20,11 @@
      thead, tfoot {
         background-color: rgba(15, 14, 14, 0.856);
         color: white;
+     }
+     thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: rgba(15, 14, 14, 0.856);
      }
      tbody tr:nth-child(2n) {    /* 2n = pares (odd) / 2n-1 = impares (even)*/
         background-color: rgba(128, 128, 128, 0.466);
